@@ -1,0 +1,10 @@
+app-header {
+    z-index: 0;
+    position: relative;
+}
+
+div {
+    z-index: -1;
+    position: relative;
+    max-width: 40px;
+}

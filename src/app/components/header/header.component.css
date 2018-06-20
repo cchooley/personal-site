@@ -1,0 +1,59 @@
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 5px black solid;
+    background-image: url("../../../assets/binary.jpg");
+    background-color: grey;
+    background-blend-mode: screen
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+    border: 4px solid black;
+    background-color: white;
+}
+
+nav:hover, .card:hover {
+    color: white;
+    background-color: #9dadbd;
+    border-color: orange;
+}
+
+.card {
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    border: 4px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+    transform: scale(1.3)
+}
+
+a:active {
+    color: green;
+}
+
+h2, h3 {
+    margin: 0px
+}
+
+h2 {
+    padding-bottom: 10px
+}

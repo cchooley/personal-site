@@ -1,0 +1,76 @@
+<main>
+  <section>
+  <div class="pCard" (click)="click1 = !click1" *ngIf="!click2 && !click3">
+    <h2>VYP - Seussical, The Musical!</h2>
+    <h5>Built using: Angular, TypeScript, PostgreSQL, Knex.js, Express.js, Heroku, CSS, HTML</h5>
+    <p *ngIf="!click1">Click for description.</p>
+    <p *ngIf="click1">Click to close.</p>
+  </div>
+  <div class="pCard" (click)="click2 = !click2" *ngIf="!click1 && !click3">
+    <h2>GOGOT - The Game of Game of Thrones</h2>
+    <h5>Built using: Angular, TypeScript, CSS, HTML</h5>
+    <p *ngIf="!click2">Click for description.</p>
+    <p *ngIf="click2">Click to close.</p>
+  </div>
+  <div class="pCard" (click)="click3 = !click3" *ngIf="!click1 && !click2">
+    <h2>GOGOT - The Game of Game of Thrones</h2>
+    <h5>Built using: Angular, TypeScript, CSS, HTML</h5>
+    <p *ngIf="!click3">Click for description.</p>
+    <p *ngIf="click3">Some thing I did.</p>
+  </div>
+  </section>
+  <section class="dContainer">
+    <div class="describe pCard center" *ngIf="!click1 && !click2 && !click3">
+      <h2>Take a look at some of my work.</h2>
+      <p>So far I've used a slew of technologies and languages to build apps and sites for an array of different clients.</p>
+      <p>Click on any of the above for a description of the project and a link to check each one out in all of its (debatable) glory.</p>
+      <p>If you want to look even further under the hood, you can check out my <a href="https://github.com/cchooley">Github</a>.</p>
+    </div>
+    <div class="describe pCard" *ngIf="click1">
+      <p>This is a full-stack app that was built for Aurora, CO's <a href="http://www.vintagetheatre.com/">Vintage Theatre</a>, one of the largest non-profit live theatres in
+        Colorado.
+      </p>
+      <p>
+        Vintage required a means of tracking the registry for their Youth Program's summer camp, which accepts both paid enrollees
+        as well as scholarship students.
+      </p>
+      <p>
+        Using PostgreSQL, Knex.js, and Express.js, I built an API that would offer persisting registration data on enrollees and
+        record whether they are paid students or scholarship recipients.
+      </p>
+      <p>
+        On the frontend, I built a single page application with Angular that offers all relevant program information, as well as
+        relevant forms for paid vs. scholarship. It also has an "Admin" section that allows administrators to track enrollment
+        in all forms.
+      </p>
+      <p>
+        Still needed: I hope to soon integrate Stripe to capture payments as well as a feature like OAuth that will allow for administrators
+        to log in and access the "Admin" section (and, of course, to keep the general public from accessing it!)
+      </p>
+    </div>
+    <div class="describe pCard" *ngIf="click2">
+      <p>
+        This app is demos a crucial aspect of a larger, long-term project called GOGOT that I am working on another colleague. We
+        came up with the idea for this game before Game of Thrones’ fifth season that kind of caught fire - essentially formatting
+        the “Survivor Pool” NFL game to apply to HBO's Game of Thrones.
+      </p>
+      <p>
+        The GOGOT app, including this demo version, is chiefly designed to administer and record weekly selections. This would be
+        something that could identify a player, present them with the eligible characters for selection, log their pick and display
+        the week’s selections. All in an efficient and stylish way.
+      </p>
+      <p>
+        My objective for this project was to use Angular to code the aforementioned game logic into a workable demo, and in those
+        terms it functions exactly how I’d like.
+      </p>
+      <p>
+        Still needed: A final, truly-playable version will require components that will create and store player accounts, store weekly pick information
+        for characters and players alike, and conditionally open and close the weekly selections at the correct times (last season
+        the pick period typically ran from Tuesday or Wednesday afternoon through the Sunday evening start time of that week’s episode).
+        I’d also love to add a message board for trash talk and some other peripheral aspects that players can geek out on - episode
+        info, memes, quotes, etc.
+      </p>
+      <a href="https://gogot-33035.firebaseapp.com/brochure">Check out GOGOT!</a>
+    </div>
+  </section>
+</main>

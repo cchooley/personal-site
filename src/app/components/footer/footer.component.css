@@ -1,0 +1,45 @@
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    border-top: 5px black solid;
+    background-image: url("../../../assets/binary.jpg");
+    background-color: grey;
+    background-blend-mode: screen
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 25%;
+    padding: 10px;
+    border: 4px solid black;
+    background-color: white;
+}
+
+nav:hover, fa:hover, .card:hover {
+    color: white;
+    background-color: #9dadbd;
+    border-color: orange
+}
+
+.card {
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    border: 4px solid black;
+}
+
+fa {
+    text-decoration: none;
+    color: black;
+    size: 20px;
+}
+
+a:hover {
+    transform: scale(1.3);
+}
