@@ -4,17 +4,20 @@ main {
 
 }
 
-section {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly
-}
-
 .pCard {
     background: grey;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     opacity: .6;
+    border: 1px black solid;
+    width: 33%;
+    text-align: center
+}
+
+.pCardSolid {
+    background: grey;
+    margin: 10px;
+    padding: 5px;
     border: 1px black solid;
     width: 33%;
 }
@@ -50,6 +53,68 @@ h5 {
     padding: 10px;
 }
 
+.display {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-evenly
+}
+
 .center {
     text-align: center;
+}
+
+.pImg {
+    border: 1px orange solid;
+    width: 66%;
+    height: 66%;
+}
+
+.imgContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    max-width: 40%;
+    min-width: 40%
+}
+
+img {
+    margin-top: 15px;
+    width: 75%;
+    height: 50%;
+    border: 2px solid black;
+}
+
+.textContainer {
+    min-width: 60%;
+    max-width: 60%;
+}
+
+.menu {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center
+}
+
+.subMenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+.arrow:hover {
+    color: orange
 }

@@ -43,3 +43,11 @@ fa {
 a:hover {
     transform: scale(1.3);
 }
+
+.li:hover {
+    color: #0077B5
+}
+
+.sc:hover {
+    color: #FF5223
+}

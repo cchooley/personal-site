@@ -2,3 +2,11 @@
     font-family: 'Inconsolata', monospace;
     font-weight: 300
 }
+
+.center {
+    text-align: center
+}
+
+.bold {
+    font-weight: bold
+}

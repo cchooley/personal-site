@@ -1,3 +1,17 @@
-<p>
-  contact works!
-</p>
+<main>
+  <div class="text">
+    <h2 class="center bold">Hit me up!</h2>
+    <h3 class="center">Fill out the form to the right there and let's connect!</h3>
+    <h3 class="center">I'm happy to chat about jobs, meetups, the world of tech, and a whole other lot of things. I look forward to hearing from you!</h3>
+    <h3 class="center">Of course, you can also reach me on <a href="https://www.linkedin.com/in/conor-hooley/">LinkedIn</a>.</h3>
+  </div>
+  <form #contactForm="ngForm">
+    <label for="name" class="bold">Your Name:</label>
+    <input type="text" name="name" id="cName" [(ngModel)]="model.name">
+    <label for="email" class="bold">Your E-Mail:</label>
+    <input type="text" name="email" id="cStrain" [(ngModel)]="model.email">
+    <label for="description" class="bold">What's Up?:</label>
+    <textarea name="text" rows="5" id="cText" [(ngModel)]="model.text"></textarea>
+    <input type="submit" id="cSubmit" name="submit" value="Submit!" (click)="onClick(this.model)">
+  </form>
+</main>
