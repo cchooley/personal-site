@@ -1,5 +1,5 @@
 main {
-    background-color: #C2C2C2;
+    background-color: #D0B5C7;
     padding: 5px 50px;
 }
 
@@ -17,21 +17,22 @@ main {
 img {
     width: 250px;
     height: 250px;
-    filter: grayscale(100%);
-    border: 2px solid black;
+    border-top: 4px #7d4e73 solid;
+    border-bottom: 4px #7d4e73 solid;
 }
 
 img:hover {
     filter: grayscale(0%);
 }
 
-.line {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    border: 1px solid black
-}
-
 .bio {
     padding: 0px 50px;
+}
+
+h2 {
+    background-color: #F8B69D;
+    color: black;
+    border-top: 4px #7d4e73 solid;
+    border-bottom: 4px #7d4e73 solid;
+    padding: 2vh;
 }

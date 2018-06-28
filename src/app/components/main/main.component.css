@@ -1,0 +1,9 @@
+.imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../assets/conorshot.jpg');
+    background-blend-mode: color-burn;
+    width: 100%;
+    height: 100%;
+}
