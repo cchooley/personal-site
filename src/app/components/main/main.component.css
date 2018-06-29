@@ -1,9 +1,35 @@
-.imgBox {
+main {
+    background: #D2B5C6;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.card {
+    border: 1px black solid;
+    margin: 10px;
+}
+
+
+.links {
     display: flex;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-around;
     align-items: center;
-    background: url('../../../assets/conorshot.jpg');
-    background-blend-mode: color-burn;
-    width: 100%;
-    height: 100%;
+}
+
+.navCard {
+    margin: 2vh;
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+    filter: grayscale(100%);
+    transition: filter 4s;
+}
+
+img:hover {
+    filter: none;
 }

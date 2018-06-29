@@ -1,6 +1,8 @@
 main {
-    background-color: #D0B5C7;;
+    background-color: #D0B5C7;
     padding: 5px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
 
 }
 
@@ -10,12 +12,12 @@ main {
     padding: 10px;
     opacity: .6;
     border: 1px black solid;
-    width: 33%;
+    max-width: 33%;
     text-align: center;
 }
 
 .pCardSolid {
-    background: grey;
+    background: #F9BF9D;
     margin: 10px;
     padding: 5px;
     border: 1px black solid;
@@ -25,8 +27,8 @@ main {
 
 .pCard:hover {
     opacity: 1;
-    background: lightslategray;
-    border: 1px orange solid;
+    background: #F9BF9D;
+    border: 1px #D29193 solid;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.9);
 }
 
@@ -35,7 +37,7 @@ h2 {
 }
 
 a {
-    color: orange;
+    color: purple;
     text-decoration: none
 }
 
@@ -67,7 +69,7 @@ h5 {
 }
 
 .pImg {
-    border: 1px orange solid;
+    border: 1px #D29193 solid;
     width: 66%;
     height: 66%;
 }
@@ -79,14 +81,14 @@ h5 {
     align-items: center;
     flex-flow: column;
     max-width: 40%;
-    min-width: 40%
+    min-width: 40%;
 }
 
 img {
-    margin-top: 15px;
-    width: 75%;
+    margin-top: 2vh;
     height: 50%;
-    border: 2px solid black;
+    width: 50%;
+    border: 2px solid #D29193;
 }
 
 .textContainer {

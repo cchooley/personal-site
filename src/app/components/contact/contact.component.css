@@ -3,6 +3,8 @@ main {
     padding: 5px 50px;
     display: flex;
     flex-flow: row;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
     justify-content: space-evenly
 }
 

@@ -9,7 +9,8 @@ footer {
     background-image: url("../../../assets/898347-subtle-orange-wallpaper.jpg");
     background-size: 100%;
     background-color: grey;
-    background-blend-mode: screen
+    background-blend-mode: screen;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
 }
 
 nav {

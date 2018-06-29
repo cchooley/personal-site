@@ -10,7 +10,8 @@ header {
     background-image: url("../../../assets/898347-subtle-orange-wallpaper.jpg");
     background-size: 100%;
     background-color: grey;
-    background-blend-mode: screen
+    background-blend-mode: screen;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
 }
 
 nav {
@@ -19,13 +20,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 40%;
-    border: 2px solid #1479CC;
     opacity: .7
 }
 
 nav:hover {
     color: white;
-    opacity: 1;
 }
 
 .card {
@@ -36,6 +35,8 @@ nav:hover {
 }
 
 .card:hover {
+    outline: 2px solid #F9BF9D;
+    color: #F9BF9D;
     background: #7d4e73;
     opacity: 1;
 }
@@ -46,8 +47,14 @@ nav:hover {
     padding: 1vh;
 }
 
+.lines {
+    border-top: 2px solid #F9BF9D;
+    border-bottom: 2px solid #F9BF9D;
+}
+
 .aContainer:hover {
-    outline: 2px solid white;
+    border-top: 2px solid white;    
+    border-bottom: 2px solid white;
 }
 
 a {
@@ -57,6 +64,7 @@ a {
 
 a:hover {
     color: white;
+    opacity: 1;
     transform: scale(1.2)
 }
 

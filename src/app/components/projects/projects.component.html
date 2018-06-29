@@ -10,19 +10,19 @@
       </div>
       <div class="subMenu">
         <div class="pCard" (click)="click1 = !click1" *ngIf="!click2 && !click3">
-          <h2 *ngIf="!click1">VYP - Seussical, The Musical!</h2>
-          <h5 *ngIf="!click1">Built using: Angular, TypeScript, PostgreSQL, Knex.js, Express.js, Heroku, Firebase, CSS, HTML</h5>
+          <h2 *ngIf="!click1">VYP</h2>
+          <div *ngIf="!click1"><img src="../../../assets/seussical.png"></div>
           <p *ngIf="!click1">Click for description.</p>
         </div>
         <div class="pCard" (click)="click2 = !click2" *ngIf="!click1 && !click3">
-          <h2 *ngIf="!click2">GOGOT - The Game of Game of Thrones</h2>
-          <h5 *ngIf="!click2">Built using: Angular, TypeScript, Firebase, CSS, HTML</h5>
+          <h2 *ngIf="!click2">GOGOT</h2>
+          <div *ngIf="!click2"><img src="../../../assets/gogot.png"></div>
           <p *ngIf="!click2">Click for description.</p>
           <h2 class="center" *ngIf="click2">Go back</h2>
         </div>
         <div class="pCard" (click)="click3 = !click3" *ngIf="!click1 && !click2">
           <h2 *ngIf="!click3">Cannalog</h2>
-          <h5 *ngIf="!click3">Built using: Angular, TypeScript, PostgreSQL, Knex.js, Express.js, Heroku, Firebase, CSS, HTML</h5>
+          <div *ngIf="!click3"><img src="../../../assets/cannalog.png"></div>
           <p *ngIf="!click3">Click for description.</p>
           <h2 class="center" *ngIf="click3">Go back</h2>
         </div>
