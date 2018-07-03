@@ -1,5 +1,5 @@
 main {
-    background-color: white;
+    background-color: #FDEBE1;
     padding: 5px;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
@@ -37,8 +37,12 @@ h2 {
 }
 
 a {
-    color: purple;
+    color: #ce4f84;
     text-decoration: none
+}
+
+.big {
+    font-size: 3vh
 }
 
 h5 {

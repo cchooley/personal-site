@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing-module';
 import { FormsModule } from '@angular/forms';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MaterializeModule } from 'angular2-materialize';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,6 +13,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpService } from './services/http.service';
+
 
 
 @NgModule({
@@ -30,8 +33,9 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule, 
     AngularFontAwesomeModule,
     MaterializeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ HttpService ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [ AppComponent ]
 })

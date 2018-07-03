@@ -11,8 +11,9 @@
     <label for="email" class="bold">Your E-Mail:</label>
     <input type="text" name="email" id="cStrain" [(ngModel)]="model.email" required>
     <label for="description" class="bold">What's Up?:</label>
-    <textarea name="text" rows="5" id="cText" [(ngModel)]="model.text" required></textarea>
-    <input type="submit" id="cSubmit" name="submit" value="Submit!" 
-    [disabled]="!contactForm.form.valid" (click)="onClick(this.model)">
+    <textarea name="text" rows="5" id="cText" [(ngModel)]="model.message" required></textarea>
+    <input type="submit" id="cSubmit" name="submit" value="Submit!" *ngIf="!submit"
+    [disabled]="!contactForm.form.valid" (click)="onClick(this.model); submit=!submit; contactForm.reset()">
+    <span *ngIf="submit">Got it! Will be in touch.</span>
   </form>
 </main>

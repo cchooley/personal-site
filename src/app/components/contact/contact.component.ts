@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../../models/contact';
+
+import { Message } from '../../models/message';
+
+import { HttpService } from '../../services/http.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,14 +11,15 @@ import { Contact } from '../../models/contact';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  contact: Contact;
-  model: Contact = {
+  message: Message;
+  messageArr: Message[] = []
+  model: Message = {
     name: '',
     email: '',
-    text: ''
+    message: ''
   }
 
-  constructor() { }
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
   }
@@ -22,10 +27,9 @@ export class ContactComponent implements OnInit {
   onClick(model): void {
     event.preventDefault()
     console.log(model)
-    this.model = {
-      name: '',
-      email: '',
-      text: ''
-    }
+    this._httpService.postMessage(this.model)
+      .subscribe(message => {
+        this.messageArr.push(message)
+    })
   }
 }

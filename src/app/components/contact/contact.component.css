@@ -40,9 +40,6 @@ label, input, textarea {
     max-width: 80%;
 }
 
-input, textarea {
-    border: 1px solid black;
-}
 
 input:focus, textarea:focus {
     background: #ff8773;
@@ -63,11 +60,12 @@ input:focus, textarea:focus {
     opacity: .4;
 }
 
-textarea {
+textarea, input {
     outline: none;
     border: none;
     border-bottom: 1px grey solid;
 }
+
 .ng-valid[required], .ng-valid.required  {
     border-left: 3px solid green; 
 }
