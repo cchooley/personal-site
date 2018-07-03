@@ -1,7 +1,7 @@
 footer {
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
     align-items: center;
     padding: 15px;
@@ -10,22 +10,21 @@ footer {
     background-size: 100%;
     background-color: grey;
     background-blend-mode: screen;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
 }
 
-nav {
+div {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    align-items: center;
     width: 25%;
-    padding: 10px;
-    border: 2px solid #9b5c72	;
+    border: 2px solid #9b5c72;
     opacity: .7;
+    padding: 1vh;
 }
 
-nav:hover, fa:hover, .card:hover {
+div:hover, fa:hover, .card:hover {
     color: white;
-    background-color: #9b5c72;
     opacity: 1
 }
 

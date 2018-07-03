@@ -10,6 +10,9 @@ main {
     flex-flow: row;
     align-items: center;
     justify-content: space-around;
+    background: #F8B69D;
+    border-top: 4px #7d4e73 solid;
+    border-bottom: 4px #7d4e73 solid;
 }
 
 .profile {
@@ -29,6 +32,9 @@ img:hover {
 
 .bio {
     padding: 0px 50px;
+    background: #F8B69D;
+    border-top: 4px #7d4e73 solid;
+    border-bottom: 4px #7d4e73 solid;   
 }
 
 h2 {
