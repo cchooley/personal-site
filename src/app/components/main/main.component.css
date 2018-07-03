@@ -1,11 +1,7 @@
 main {
-    background: #D2B5C6;
+    background-color: #FDEBE1;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
-}
-
-.card {
-    margin: 10px;
 }
 
 
@@ -31,4 +27,14 @@ img {
 
 img:hover {
     filter: none;
+}
+
+.card {
+    background: #F8B69D;
+    padding: 2vh;
+    margin: 10px 30px;
+}
+
+.divider {
+    margin: 30px;
 }

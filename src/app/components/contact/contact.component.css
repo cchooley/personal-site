@@ -1,17 +1,20 @@
 main {
-    background-color: #D0B5C7;
+    background-color: #FDEBE1;
     padding: 5px 50px;
     display: flex;
     flex-flow: row;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    align-items: flex-start
 }
 
-.text {
+.textBox {
+    display: flex;
+    flex-flow: column;
     min-width: 50%;
     max-width: 50%;
-    padding: 15px;
+    padding: 5px;
     background: white;
     border: 2px black solid
 }
@@ -20,11 +23,15 @@ form {
     padding: 5px;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-width: 35%;
     background: white;
     border: 2px black solid
+}
+
+label {
+    color: black
 }
 
 label, input, textarea {
@@ -38,16 +45,33 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    background: black;
+    background: #ff8773;
     color: white;
     outline: none
 }
 
 #cSubmit {
-    background-color: darkslategrey;
+    background-color: #ff8773;
     color: white;
     margin: 10px;
     padding: 10px;
     font-size: 15px;
     min-width: 25%
+}
+
+#cSubmit:disabled {
+    opacity: .4;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px grey solid;
+}
+.ng-valid[required], .ng-valid.required  {
+    border-left: 3px solid green; 
+}
+
+.ng-invalid:not(form)  {
+    border-left: 3px solid #ff8773; 
 }

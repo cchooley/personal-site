@@ -1,5 +1,5 @@
 main {
-    background-color: #D0B5C7;
+    background-color: white;
     padding: 5px;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
@@ -75,13 +75,12 @@ h5 {
 }
 
 .imgContainer {
-    margin-top: 10px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    max-width: 40%;
-    min-width: 40%;
+    width: 80%;
 }
 
 img {
@@ -91,9 +90,17 @@ img {
     border: 2px solid #D29193;
 }
 
+.clickBox {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background: #FF8773;
+    margin: 15px;
+    width: 100%
+}
+
 .textContainer {
-    min-width: 60%;
-    max-width: 60%;
+    width: 80%
 }
 
 .menu {
@@ -110,7 +117,7 @@ img {
     align-items: center;
 }
 
-.arrow {
+i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +126,7 @@ img {
     padding: 20px;
 }
 
-.arrow:hover {
-    color: orange
+i:hover {
+    color: orange;
+    cursor: pointer
 }
