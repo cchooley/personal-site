@@ -1,6 +1,6 @@
 main {
     background-color: #FDEBE1;
-    padding: 5px;
+    padding: 5vh;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
 
@@ -46,7 +46,6 @@ a {
 }
 
 h5 {
-    margin: 2px;
     color: white;
 }
 

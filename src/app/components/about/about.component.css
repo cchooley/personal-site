@@ -1,6 +1,6 @@
 main {
     background-color: #FDEBE1;
-    padding: 5px 50px;
+    padding: 5vh;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
 }
@@ -13,6 +13,7 @@ main {
     background: #F8B69D;
     border-top: 4px #7d4e73 solid;
     border-bottom: 4px #7d4e73 solid;
+    padding: 2vh 8vh;
 }
 
 .profile {
@@ -31,16 +32,8 @@ img:hover {
 }
 
 .bio {
-    padding: 0px 50px;
+    padding: 2vh 10vh;
     background: #F8B69D;
     border-top: 4px #7d4e73 solid;
     border-bottom: 4px #7d4e73 solid;   
-}
-
-h2 {
-    background-color: #F8B69D;
-    color: black;
-    border-top: 4px #7d4e73 solid;
-    border-bottom: 4px #7d4e73 solid;
-    padding: 2vh;
 }

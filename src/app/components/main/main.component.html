@@ -1,16 +1,14 @@
-<main>
-  <div class="divider"></div>
+<main id="mHeader">
   <div class="card">
-    <h3 class="center">Hello, I'm Conor. Welcome to my portfolio site.</h3>
-    <h4 class="center">I write code, and that's kind of what this is about.</h4>
-    <h4 class="center">Please take a look around and check some stuff out.</h4>
+    <h4 class="center">Hello, I'm Conor. Welcome to my portfolio site.</h4>
+    <h5 class="center">Come on in and look at some of my stuff.</h5>
     <h6 class="center">(It probably won't be a complete waste of time)</h6>
   </div>
   <div class="divider"></div>
   <div class="links">
     <div class="navCard card transparent hoverable">
       <div class="card-image waves-effect waves-light">
-        <img class="activator" src="../../../assets/deepthinking.jpg">
+        <img class="activator" src="../../../assets/flower.jpg">
         <span class="center">Read about me...</span>
       </div>
       <div class="card-reveal">
@@ -18,8 +16,8 @@
           <i class="material-icons right">close</i>
         </span>
         <p>... because we all need a bio page, right?</p>
-        <div class="card-action">
-          <a routerLink="/about">Learn more.</a>
+        <div class="card-action" routerLink="/projects" fragment="aHeader">
+          <a href="#aHeader">Learn more.</a>
         </div>
       </div>
     </div>
@@ -33,8 +31,8 @@
           <i class="material-icons right">close</i>
         </span>
         <p>... since that's probably why you're here.</p>
-        <div class="card-action">
-          <a routerLink="/projects">Sounds interesting.</a>
+        <div class="card-action" routerLink="/projects" fragment="pHeader">
+          <a href="#pHeader">Sounds interesting.</a>
         </div>
       </div>
     </div>
@@ -48,11 +46,10 @@
           <i class="material-icons right">close</i>
         </span>
         <p>... I'd be happy to chat.</p>
-        <div class="card-action">
-          <a routerLink="/contact">Let's connect!</a>
+        <div class="card-action" routerLink="/contact" fragment="cHeader">
+          <a href="#cHeader">Let's connect!</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="divider"></div>
 </main>

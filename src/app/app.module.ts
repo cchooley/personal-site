@@ -33,7 +33,7 @@ import { HttpService } from './services/http.service';
     FormsModule, 
     AngularFontAwesomeModule,
     MaterializeModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [ HttpService ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],

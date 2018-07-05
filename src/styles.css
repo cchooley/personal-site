@@ -1,6 +1,7 @@
 * {
     font-family: 'Inconsolata', monospace;
-    font-weight: 300
+    font-weight: 300;
+    outline: none;
 }
 
 .center {
