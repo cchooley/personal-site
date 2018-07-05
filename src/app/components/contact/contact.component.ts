@@ -18,6 +18,7 @@ export class ContactComponent implements OnInit {
     email: '',
     message: ''
   }
+  submit: boolean
 
   constructor(private _httpService: HttpService) { }
 

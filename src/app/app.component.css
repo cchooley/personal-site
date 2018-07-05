@@ -13,7 +13,7 @@ span {
     padding: 5vh 10vh;
     border: 3px #010F44 solid;
     font-size: 5vh;
-    font-weight: 800
+    font-weight: 800;
 }
 
 .k1 {
@@ -25,9 +25,15 @@ span {
 }
 
 .k3 {
-    background-image: url(../assets/killian3.jpg)
+    background-image: url(../assets/killian4.jpg);
+    background-position: 50% 25%;
 }
 
 .t1 {
     color: #94A5D9
+}
+
+.t3 {
+    color: #3496EE;
+    border: 3px #565A8C solid;
 }

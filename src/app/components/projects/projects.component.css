@@ -120,16 +120,16 @@ img {
     align-items: center;
 }
 
-i {
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     margin: 10px;
-    padding: 20px;
+    padding: 1vh;
 }
 
-i:hover {
+.icon:hover {
     color: orange;
     cursor: pointer
 }

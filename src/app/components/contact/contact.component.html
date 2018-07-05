@@ -1,17 +1,17 @@
 <main id="cHeader">
   <div class="textBox">
-    <h4 class="center">Fill out the form to the right there and let's connect!</h4>
-    <h5 class="center">I'm happy to chat about jobs, meetups, the world of tech, and a whole other lot of things. I look forward to hearing from you!</h5>
+    <h5 class="center">Let's connect!</h5>
+    <h5 class="center">Fill out the form on the right if you'd like to touch base regarding work, tech, or any such business. I look forward to hearing from you!</h5>
     <h5 class="center">Of course, you can also reach me on <a href="https://www.linkedin.com/in/conor-hooley/">LinkedIn</a>.</h5>
   </div>
   <form #contactForm="ngForm">
-    <h4 class="center bold">Hit me up!</h4>
+    <h5 class="center bold">Hit me up!</h5>
     <label for="name" class="bold">Your Name:</label>
-    <input type="text" name="name" id="cName" [(ngModel)]="model.name" required>
+    <input type="text" name="name" id="cName" [(ngModel)]="model.name" required placeholder="Or an alias...">
     <label for="email" class="bold">Your E-Mail:</label>
-    <input type="text" name="email" id="cStrain" [(ngModel)]="model.email" required>
-    <label for="description" class="bold">What's Up?:</label>
-    <textarea name="text" rows="5" id="cText" [(ngModel)]="model.message" required></textarea>
+    <input type="text" name="email" id="cStrain" [(ngModel)]="model.email" required placeholder="A real one, please...">
+    <label for="description" class="bold">Your Message:</label>
+    <textarea name="text" rows="5" id="cText" [(ngModel)]="model.message" required placeholder="What's up?"></textarea>
     <input type="submit" id="cSubmit" name="submit" value="Submit!" *ngIf="!submit"
     [disabled]="!contactForm.form.valid" (click)="onClick(this.model); submit=!submit; contactForm.reset()">
     <span *ngIf="submit">Got it! Will be in touch.</span>

@@ -9,14 +9,17 @@ main {
     align-items: flex-start
 }
 
+.textBox, form {
+    background: #FCBEA1
+}
+
 .textBox {
     display: flex;
     flex-flow: column;
     min-width: 50%;
     max-width: 50%;
     padding: 3vh;
-    background: white;
-    border: 2px black solid
+    border: 1px black solid
 }
 
 form {
@@ -26,8 +29,7 @@ form {
     justify-content: flex-start;
     align-items: center;
     min-width: 35%;
-    background: white;
-    border: 2px black solid
+    border: 1px black solid
 }
 
 label {
@@ -42,8 +44,7 @@ label, input, textarea {
 
 
 input:focus, textarea:focus {
-    background: #ff8773;
-    color: white;
+    background: white;
     outline: none
 }
 
@@ -72,4 +73,10 @@ textarea, input {
 
 .ng-invalid:not(form)  {
     border-left: 3px solid #ff8773; 
+}
+
+::-webkit-input-placeholder {
+    color: #FDEBE1;
+    font-style: italic;
+    margin: 0px 1px;
 }

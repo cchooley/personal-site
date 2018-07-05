@@ -21,8 +21,8 @@ main {
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    width: 17vw;
+    height: 34vh;
     border-top: 4px #7d4e73 solid;
     border-bottom: 4px #7d4e73 solid;
 }
@@ -36,4 +36,8 @@ img:hover {
     background: #F8B69D;
     border-top: 4px #7d4e73 solid;
     border-bottom: 4px #7d4e73 solid;   
+}
+
+h6 {
+    font-size: 3vh;
 }

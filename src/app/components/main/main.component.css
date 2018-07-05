@@ -43,3 +43,8 @@ img:hover {
 .divider {
     margin: 30px;
 }
+
+fa {
+    float: right;
+    padding: 1vh
+}
