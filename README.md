@@ -1,6 +1,6 @@
 # Conor Hooley's Portfolio Site
 
-(screenshot.png)
+![site image](screenshot.png)
 
 This site is meant to showcase my work and serve as a networking asset for connecting with the development community.
 
@@ -14,7 +14,7 @@ Run `npm install` to install dependencies.
 
 Run `ng serve` for a dev client server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `npm test` for a dev database server. Navigate to `http://localhost:3000/`. Testing CRUD functionality with Postman (https://www.getpostman.com/) highly recommended.
+Run `npm test` for a dev database server. Navigate to `http://localhost:3000/`. Testing CRUD functionality with [Postman](https://www.getpostman.com/) highly recommended.
 
 ## Contact info
 cchooley@gmail.com
