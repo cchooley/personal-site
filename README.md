@@ -1,6 +1,6 @@
 # Conor Hooley's Portfolio Site
 
-![site image](screenshot.png)
+![site image](screenshot.jpg)
 
 This site is meant to showcase my work and serve as a networking asset for connecting with the development community.
 
