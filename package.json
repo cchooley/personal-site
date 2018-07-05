@@ -1,6 +1,7 @@
 {
-  "name": "personal-site",
-  "version": "0.0.0",
+  "name": "conor-hooley-portfolio-site",
+  "version": "1.0.0",
+  "author": "Conor Hooley",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
