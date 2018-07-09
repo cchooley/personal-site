@@ -26,5 +26,5 @@ Run `ng serve` for a dev client server. Navigate to `http://localhost:4200/`. Th
 - Firebase
 
 ## Contact info
-cchooley@gmail.com
-https://www.linkedin.com/in/conor-hooley/
+- cchooley@gmail.com
+- https://www.linkedin.com/in/conor-hooley/
