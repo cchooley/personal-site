@@ -17,7 +17,7 @@ div {
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
-    width: 25%;
+    width: 25vmax;
     border: 2px solid #9b5c72;
     opacity: .7;
     padding: 1vh;

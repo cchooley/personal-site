@@ -2,21 +2,22 @@
   <span class="t3">Contact</span>
 </div>
 <main>
-  <div class="textBox">
-    <h5 class="center">Let's connect!</h5>
-    <h5 class="center">Fill out the form on the right if you'd like to touch base regarding work, tech, or any such business. I look forward to hearing from you!</h5>
-    <h5 class="center">Of course, you can also reach me on <a href="https://www.linkedin.com/in/conor-hooley/">LinkedIn</a>.</h5>
-  </div>
   <form #contactForm="ngForm">
-    <h5 class="center bold">Hit me up!</h5>
-    <label for="name" class="bold">Your Name:</label>
-    <input type="text" name="name" id="cName" [(ngModel)]="model.name" required placeholder="Or an alias...">
-    <label for="email" class="bold">Your E-Mail:</label>
-    <input type="text" name="email" id="cStrain" [(ngModel)]="model.email" required placeholder="A real one, please...">
-    <label for="description" class="bold">Your Message:</label>
-    <textarea name="text" rows="5" id="cText" [(ngModel)]="model.message" required placeholder="What's up?"></textarea>
-    <input type="submit" id="cSubmit" name="submit" value="Submit!" *ngIf="!submit"
-    [disabled]="!contactForm.form.valid" (click)="onClick(this.model); submit=!submit; contactForm.reset()">
-    <span *ngIf="submit">Got it! Will be in touch.</span>
+    <h4 class="center">Let's connect!</h4>
+    <h5 class="center">Fill out the form below to touch base regarding work, tech, or any such business.</h5>
+    <h5 class="center">Of course, you can also reach me on
+      <a href="https://www.linkedin.com/in/conor-hooley/">LinkedIn</a>.</h5>
+    <h5 class="center bold">I look forward to hearing from you!</h5>
+    <div class="innerForm">
+      <label for="name" class="bold">Your Name:</label>
+      <input type="text" name="name" id="cName" [(ngModel)]="model.name" required>
+      <label for="email" class="bold">Your E-Mail:</label>
+      <input type="text" name="email" id="cStrain" [(ngModel)]="model.email" required>
+      <label for="description" class="bold">Your Message:</label>
+      <textarea name="text" rows="5" id="cText" [(ngModel)]="model.message" required></textarea>
+      <input type="submit" id="cSubmit" name="submit" value="Submit!" *ngIf="!submit"
+      [disabled]="!contactForm.form.valid" (click)="onClick(this.model); submit=!submit; contactForm.reset()">
+      <span *ngIf="submit">Got it! Will be in touch.</span>
+    </div>
   </form>
 </main>
