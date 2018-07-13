@@ -9,23 +9,39 @@ main {
     border-bottom: 1px black solid;
 }
 
+h4 {
+    font-size: 3vmax;
+}
+
+h5 {
+    font-size: 2.5vmax;
+}
+
+h6 {
+    font-size: 1.5vmax;
+}
 
 .links {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .navCard {
-    margin: 2vh;
+    width: 40vmin;
+    height: 100%;
+    margin: 1vh;
     display: flex;
     flex-flow: column;
+    font-size: 2vmax;
 }
 
-img {
-    max-height: 200px;
-    max-width: 200px;
+
+.activator {
+    height: 100%;
+    width: 20vmax;
     filter: grayscale(100%);
     transition: filter 1s;
 }
