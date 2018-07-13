@@ -12,6 +12,7 @@ header {
     background-color: grey;
     background-blend-mode: screen;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
+    height: 100%
 
 }
 
@@ -20,12 +21,13 @@ nav {
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 50vw;
+    font-size: 1.5vmax;
     opacity: .7;
 }
 
 .card {
-    width: 30%;
+    width: 35vw;
     padding: 10px;
     border: 2px solid #7d4e73;
     opacity: .7;
@@ -70,9 +72,9 @@ h2, h3 {
 
 h2 {
     padding-bottom: 10px;
-    font-size: 5vh
+    font-size: 4vmax
 }
 
 h3 {
-    font-size: 3vh
+    font-size: 2vmax
 }
