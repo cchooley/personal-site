@@ -21,33 +21,31 @@ h6 {
     font-size: 1.5vmax;
 }
 
-.links {
+.navCard {
+    width: 15vmax;
+    margin: 4vw;
+}
+
+section {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
+    justify-content: space-evenly;
 }
-
-.navCard {
-    width: 40vmin;
-    height: 100%;
-    margin: 1vh;
-    display: flex;
-    flex-flow: column;
-    font-size: 2vmax;
-}
-
 
 .activator {
-    height: 100%;
-    width: 20vmax;
+    height: 15vmax;
+    width: 15vmax;
     filter: grayscale(100%);
     transition: filter 1s;
 }
 
+span {
+    font-size: 1.7vmax;
+}
+
 img:hover {
     filter: none;
+
 }
 
 .card {
@@ -57,10 +55,9 @@ img:hover {
 }
 
 .divider {
-    margin: 30px;
+    margin: 3vh;
 }
 
-fa {
-    float: right;
-    padding: 1vh
+a {
+    color: black;
 }
