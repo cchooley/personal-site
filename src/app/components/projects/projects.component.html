@@ -4,6 +4,7 @@
   </div>
 </div>
 <main>
+  <router-outlet></router-outlet>
   <section>
     <div class="menu" *ngIf="!click1 && !click2 && !click3 && !click4">
       <div class="describe pCardSolid center">
@@ -14,24 +15,24 @@
           <a href="https://github.com/cchooley">Github</a>.</p>
       </div>
       <div class="subMenu">
-        <div class="pCard card waves-effect" (click)="click1 = !click1" *ngIf="!click2 && !click3 && !click4">
+        <div class="pCard card waves-effect">
           <div class="card-image">
-            <img src="../../../assets/bettership.jpg">
+            <a routerLink="/bettership"><img src="../../../assets/bettership.jpg"></a>
           </div>
         </div>
-        <div class="pCard card waves-effect" (click)="click2 = !click2" *ngIf="!click1 && !click3 && !click4">
+        <div class="pCard card waves-effect">
           <div class="card-image">
-            <img src="../../../assets/seussical.png">
+            <a routerLink="/vyp"><img src="../../../assets/seussical.png"></a>
           </div>
         </div>
-        <div class="pCard card waves-effect" (click)="click3 = !click3" *ngIf="!click1 && !click2 && !click4">
+        <div class="pCard card waves-effect">
           <div class="card-image">
-            <img src="../../../assets/gogot.png">
+            <a routerLink="/gogot"><img src="../../../assets/gogot.png"></a>
           </div>
         </div>
-        <div class="pCard card waves-effect" (click)="click4 = !click4" *ngIf="!click1 && !click2 && !click3">
+        <div class="pCard card waves-effect">
           <div class="card-image">
-            <img src="../../../assets/cannalog.png">
+            <a routerLink="/cannalog"><img src="../../../assets/cannalog.png"></a>
           </div>
         </div>
       </div>

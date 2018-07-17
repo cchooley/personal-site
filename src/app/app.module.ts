@@ -14,6 +14,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpService } from './services/http.service';
+import { BettershipComponent } from './components/bettership/bettership.component';
+import { VypComponent } from './components/vyp/vyp.component';
+import { GogotComponent } from './components/gogot/gogot.component';
+import { CannalogComponent } from './components/cannalog/cannalog.component';
 
 
 
@@ -25,7 +29,11 @@ import { HttpService } from './services/http.service';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    BettershipComponent,
+    VypComponent,
+    GogotComponent,
+    CannalogComponent
   ],
   imports: [
     BrowserModule,
