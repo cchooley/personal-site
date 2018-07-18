@@ -1,0 +1,12 @@
+img {
+    height: auto;
+    width: 100%;
+}
+
+a {
+    color: orange
+}
+
+a:hover {
+    color: #D0B5C7
+}

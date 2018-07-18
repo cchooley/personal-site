@@ -6,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  click1: boolean
-  click2: boolean
-  click3: boolean
-  click4: boolean
-
+  
   constructor() { }
 
   ngOnInit() {

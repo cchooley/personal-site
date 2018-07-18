@@ -1,3 +1,39 @@
-<p>
-  gogot works!
-</p>
+<section>
+    <img src="../../../assets/gogot.png" class="waves-effect waves-light orange lighten-2 btn modal-trigger dismissable" 
+    alt="gogot" (click)="openModal()">
+
+  <div id="modal1" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: true, opacity: .2}]" [materializeActions]="modalActions">
+    <div class="modal-content">
+      <h4>GOGOT - The Game of Game of Thrones</h4>
+      <h6>Built using: Angular, TypeScript, Firebase, CSS, HTML</h6>
+        <p>
+          This app is demos a crucial aspect of a larger, long-term project called GOGOT that I am working on another colleague. We
+          came up with the idea for this game before Game of Thrones’ fifth season that kind of caught fire - essentially formatting
+          the “Survivor Pool” NFL game to apply to HBO's Game of Thrones.
+        </p>
+        <p>
+          The GOGOT app, including this demo version, is chiefly designed to administer and record weekly selections. This would be
+          something that could identify a player, present them with the eligible characters for selection, log their pick and display
+          the week’s selections. All in an efficient and stylish way.
+        </p>
+        <p>
+          My objective for this project was to use Angular to code the aforementioned game logic into a workable demo, and in those
+          terms it functions exactly how I’d like.
+        </p>
+        <p>
+          Still needed: A final, truly-playable version will require components that will create and store player accounts, store weekly
+          pick information for characters and players alike, and conditionally open and close the weekly selections at the correct
+          times (last season the pick period typically ran from Tuesday or Wednesday afternoon through the Sunday evening start time
+          of that week’s episode). I’d also love to add a message board for trash talk and some other peripheral aspects that players
+          can geek out on - episode info, memes, quotes, etc.
+        </p>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" 
+        href="https://gogot-33035.firebaseapp.com/">View Live</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" 
+        href="https://github.com/cchooley/angular-project2-GOGOT/">GitHub</a>
+      <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    </div>
+  </div>
+</section>

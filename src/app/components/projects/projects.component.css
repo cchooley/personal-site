@@ -30,16 +30,6 @@ span {
     color: white;
 }
 
-.pCard {
-    background: grey;
-    margin: 10px;
-    padding: 10px;
-    opacity: .6;
-    border: 1px black solid;
-    max-width: 33%;
-    text-align: center;
-}
-
 .pCardSolid {
     background: #F9BF9D;
     margin: 10px;
@@ -49,24 +39,9 @@ span {
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
-.pCard:hover {
-    opacity: 1;
-    background: #F9BF9D;
-    border: 1px #D29193 solid;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.9);
-}
-
-h2 {
-    margin: 2px;
-}
-
 a {
     color: #ce4f84;
     text-decoration: none
-}
-
-.big {
-    font-size: 3vh
 }
 
 h5 {
@@ -75,13 +50,7 @@ h5 {
 }
 
 p {
-    font-size: 2vmax;
-}
-
-.dContainer {
-    display: flex;
-    justify-content: center;
-    align-self: center
+    font-size: 1.75vmax;
 }
 
 .describe {
@@ -89,76 +58,20 @@ p {
     padding: 10px;
 }
 
-.display {
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    justify-content: space-evenly
-}
-
-.center {
-    text-align: center;
-}
-
-.pImg {
-    border: 1px #D29193 solid;
-    width: 66%;
-    height: 66%;
-}
-
-.imgContainer {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    width: 80%;
-}
-
-img {
-    margin-top: 2vh;
-    height: 50%;
-    width: 50%;
-    border: 2px solid #D29193;
-}
-
-.clickBox {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    background: #FF8773;
-    margin: 15px;
-    width: 100%
-}
-
-.textContainer {
-    width: 80%
-}
-
 .menu {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    padding: .5vh;
 }
 
 .subMenu {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 10px;
-    padding: 1vh;
-}
-
-.icon:hover {
-    color: orange;
-    cursor: pointer
+    margin: 3vh;
+    display:grid;
+    grid-template-columns: 35vw 35vw;
+    grid-row: auto auto;
+    grid-column-gap: 1vw;
+    grid-row-gap: 5vh;
+    justify-items: center;
 }

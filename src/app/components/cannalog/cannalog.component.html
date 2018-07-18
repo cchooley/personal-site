@@ -1,3 +1,53 @@
-<p>
-  cannalog works!
-</p>
+<section>
+    <img src="../../../assets/cannalog.png" class="waves-effect waves-light deep-orange accent-1 btn modal-trigger" 
+    alt="cannalog" (click)="openModal()">
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: true, opacity: .2}]" [materializeActions]="modalActions">
+    <div class="modal-content">
+      <h4>Cannalog</h4>
+      <h6>Built using: Angular, TypeScript, PostgreSQL, Knex.js, Express.js, Heroku, Firebase, CSS, HTML</h6>
+      <div class="divider"></div>
+      <p>
+        This full-stack app is something I came up with alongside 3 other Galvanize students during a school-wide hackathon.
+      </p>
+      <p>
+        Given our 5-hour time constraints, we opted on broad, crowd-pleasing (ahem) content and created a site that would allow users
+        to browse a selection of fine cannabis. The rubric required the site to have CRUD functionality that would allow users
+        to get all of the weed, add an entry of their own, edit the entries, and delete an entry as well.
+      </p>
+      <p>
+        We went a step further and added features that would filter out the various strains by type, as well as generate a random
+        strain at the click of a button.
+      </p>
+      <p>
+        My teammates created the backend, chiefly by designing the database that contains the information being pulled by the front-end.
+      </p>
+      <p>
+        I built the front-end with Angular, with the main focus being giving full CRUD functionality.
+      </p>
+      <p>
+        Aside from a bit of superficial styling changes I recently made, this is essentially what we were able to come up with after
+        6 hours of hard coding. Not a bad way to spend the day!
+      </p>
+      <p>
+        Still needed: So many things. But in the spirit of showing what I'm capable of in a short timeframe, as well as fleshing
+        this section of the site via adhering to the rule of threes, I'm leaving this as is. For now.
+      </p>
+      <p>
+        PS - Standard issue disclaimer: yes, I am among large number of people in Colorado who have contributed their talents and
+        skills toward something marijuana-related... and do not partake.
+      </p>
+      <p>
+        PPS - Not that I judge, either, though :)
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" 
+        href="https://cannalog-5e170.firebaseapp.com/">View Live</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" 
+        href="https://github.com/cchooley/may-group-project-client-side/">GitHub</a>
+      <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    </div>
+  </div>
+</section>
