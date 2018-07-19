@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'VypComponent', component: VypComponent }
+    { path: 'vyp', component: VypComponent }
 ];
 
 @NgModule({

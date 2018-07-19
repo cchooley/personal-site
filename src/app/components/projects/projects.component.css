@@ -22,7 +22,7 @@ main {
 }
 
 span {
-    background: rgb(245, 245, 245, .3);
+    background: rgb(0, 14, 65, .4);
     padding: 4vh 8vh;
     border: 3px #94A5D9 solid;
     font-size: 4vmax;
@@ -71,7 +71,7 @@ p {
     display:grid;
     grid-template-columns: 35vw 35vw;
     grid-row: auto auto;
-    grid-column-gap: 1vw;
+    grid-column-gap: 2.5vw;
     grid-row-gap: 5vh;
     justify-items: center;
 }

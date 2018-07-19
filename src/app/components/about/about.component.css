@@ -21,7 +21,7 @@ main {
 }
 
 .span {
-    background: rgb(245, 245, 245, .3);
+    background: rgb(0, 14, 65, .4);
     color: white;
     padding: 4vh 8vh;
     border: 3px #94A5D9 solid;
@@ -61,5 +61,5 @@ h4 {
 }
 
 h6 {
-    font-size: 2vmax;
+    font-size: 1.75vmax;
 }
