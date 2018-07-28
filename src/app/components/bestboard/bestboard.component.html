@@ -1,0 +1,35 @@
+<section>
+  <img src="../../../assets/bestboard.png" class="waves-effect waves-light transparent modal-trigger"
+    (click)="openModal()">
+
+  <div id="modal1" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: true, opacity: .2}]"
+    [materializeActions]="modalActions">
+    <div class="modal-content">
+      <h4>BestBoard</h4>
+      <h6>Built using: React, React Router, Semantic UI, Stripe, Chart.js, PostgreSQL, bcrypt, JWT, Knex.js, Express.js, Node.js, Heroku, Firebase</h6>
+      <div class="divider"></div>
+      <p>
+        BestBoard is my captstone project for the WDI program at Galvanize. It is an app that was conceived as a means of improving productivity, 
+        communication, and transparency for 501(c)3 Boards of Directors.
+      </p>
+      <p>
+        Per the WDI curriculum, this was an app built in less than two weeks and prominently featuring a technology that I had not used before. My
+        unfamiliar technology here was React.js (and corresponding React libraries), which I had never personally used prior to this project.
+      </p>
+      <p>
+        BestBoard's current iteration has features such as account creation (protected with auth via bCrypt and JWT), voting management,
+        static payment processing with Stripe, a calendar via React Big Calendar, data visualization with Chart.js, admin features and 
+        full CRUD functionality. 
+      </p>
+      <p>
+        Still needed: I believe this app needs dynamic payment processing, task management tracking and document uploading to be truly complete. But who
+        am I kidding? That's probably barely scratching the surface.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" href="https://bestboardwebsite.firebaseapp.com/">View Live</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" href="https://github.com/cchooley/best-board/">GitHub</a>
+      <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    </div>
+  </div>
+</section>

@@ -18,6 +18,7 @@ import { BettershipComponent } from './components/bettership/bettership.componen
 import { VypComponent } from './components/vyp/vyp.component';
 import { GogotComponent } from './components/gogot/gogot.component';
 import { CannalogComponent } from './components/cannalog/cannalog.component';
+import { BestboardComponent } from './components/bestboard/bestboard.component';
 
 
 
@@ -33,7 +34,8 @@ import { CannalogComponent } from './components/cannalog/cannalog.component';
     BettershipComponent,
     VypComponent,
     GogotComponent,
-    CannalogComponent
+    CannalogComponent,
+    BestboardComponent
   ],
   imports: [
     BrowserModule,

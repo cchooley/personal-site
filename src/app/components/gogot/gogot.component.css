@@ -1,6 +1,6 @@
 img {
-    height: 30vh;
-    width: 100%;
+    height: 26vh;
+    width: 25vmax;
     opacity: .7;
     transition: opacity 2s
 }
